@@ -1,0 +1,522 @@
+/*.navbar-fixed-top{
+	min-height: 50px;
+}
+
+.navbar-nav{
+	padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #2b4162;
+}
+*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #182c39;
+	overflow: scroll;
+}
+
+#home{
+	background: url(signal12.jpg);
+	display: table;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#home h1{
+	text-align: center;
+	padding-top: 10%;
+	color: white;
+	word-spacing: 30px;
+	line-height: 2;
+	font-size: 3em;
+	text-transform: uppercase;
+
+}
+
+* { color:#fff; text-decoration: none;}
+
+.cool{
+	padding-top: 20em;
+}
+
+.sheet{
+	background-color: rgba(0,0,0,0.6);
+	height: 97.7%;
+}
+
+p{
+	font-size: 20px;
+	color: #B1B2BA;
+}
+
+#all{
+	padding-top: 30px;
+	padding-right: 30px;
+}
+
+#aalo{
+	padding-top: 30px;
+}
+
+#aboutus{
+	font-weight: 500;
+}
+
+#about,#ieeesps,#events{
+	padding-top: 2.5%;
+	color: #182c39;
+}
+
+#events hr,h2{
+	padding-bottom: 2.5%;
+}
+
+#events{
+	margin: 0;
+}
+
+h2{
+	color: #57609C;
+}
+
+h5{
+	font-size: 2em;
+}
+footer{
+    background: none repeat scroll 0 0 #B1B2BA;
+}
+
+.back{
+	background-color: #182c39;
+}
+/****************************/
+
+
+/* setting up the full page */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+/*************************/
+
+
+/* layout of the columns */
+
+.cols {
+  width: 100%;
+  clear: both;
+}
+
+.cols .tile {
+  height: 100%;
+  float: left;
+  overflow: scroll;
+}
+
+
+/* two columns layout */
+
+.cols.two .tile {
+  width: 50%;
+}
+
+
+/* three columns layout */
+
+.cols.three .tile {
+  width: 33%;
+}
+
+.cols.three .tile:last-of-type {
+  width: 34%;
+}
+
+
+/* four columns layout */
+
+.cols.four .tile {
+  width: 25%;
+}
+
+
+/**********************/
+
+
+/* layout of the rows */
+
+.rows {
+  height: 100%;
+}
+
+
+/* two rows layout */
+
+.rows.two .cols {
+  height: 50%;
+}
+
+
+/* three rows layout */
+
+.rows.three .cols {
+  height: 33%;
+}
+
+.rows.three .cols:last-of-type {
+  height: 34%;
+}
+
+
+/* four rows layout */
+
+.rows.four .cols {
+  height: 25%;
+}
+
+
+/*****************************************/
+
+
+/* some background images and decoration */
+
+.cols .tile {
+  opacity: 0.4;
+  background-size: cover;
+}
+
+.rows {
+  background: black;
+}
+
+.cols .tile.schmancy {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.cols .tile.schmancy.pic0 {
+  background-image: url(pics/1.jpg);
+}
+
+.cols .tile.schmancy.pic1 {
+  background-image: url(pics/3.jpg);
+}
+
+.cols .tile.schmancy.pic2 {
+  background-image: url(pics/4.JPG);
+}
+
+.cols .tile.schmancy.pic3 {
+  background-image: url(photos/imgsps.jpeg);
+}
+
+.cols .tile.schmancy.pic4 {
+  background-image: url(photos/untitled.png)
+}
+
+.cols .tile.schmancy.pic5 {
+  background-image: url(pics/riv/6.jpg);
+}
+
+.cols .tile.schmancy.pic6 {
+  background-image: url(pics/riv/5.JPG);
+}
+
+.cols .tile.schmancy.pic7 {
+  background-image: url(pics/2.JPG);
+}
+
+.cols .tile.schmancy.pic8 {
+  background-image: url(pics/DSC_0157.JPG);
+}
+
+.cols .tile.schmancy.pic9 {
+  background-image: url(pics/DSC_0014.JPG);
+}
+
+
+/************************************/
+
+
+/* typography and content of a tile */
+
+.tile .content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  margin-left: -25%;
+}
+
+.tile {
+  font-family: Helvetica;
+  color: white;
+  align: center;
+}
+
+
+/************************/
+
+
+/* animate mouse effect */
+
+.cols .tile {
+  transition: 1s;
+}
+
+.cols .tile:hover {
+  opacity: 1;
+  font-size: 10em;
+}
+
+.cols.two:hover .tile {
+  width: 20%;
+}
+
+.cols.two:hover .tile:hover {
+  width: 80%;
+}
+
+.cols.three:hover .tile {
+  width: 20%;
+}
+
+.cols.three:hover .tile:hover {
+  width: 60%;
+}
+
+.cols.four:hover .tile {
+  width: 20%;
+}
+
+.cols.four:hover .tile:hover {
+  width: 40%;
+}
+
+.rows .cols {
+  transition: 1s;
+}
+
+.rows.two:hover .cols {
+  height: 20%;
+}
+
+.rows.two:hover .cols:hover {
+  height: 80%;
+}
+
+.rows.three:hover .cols {
+  height: 20%;
+}
+
+.rows.three:hover .cols:hover {
+  height: 60%;
+}
+
+.rows.four:hover .cols {
+  height: 20%;
+}
+
+.rows.four:hover .cols:hover {
+  height: 40%;
+}
+
+.mapouter{
+          position:relative;
+          text-align:right;
+          height:251px;
+          width:1500px;
+          }
+                
+.lic{
+    position:absolute;
+    z-index:999;
+    bottom:-14px;
+    right:0;
+    font-size:11px;
+    font-family:arial;
+    color:#666;
+    }
+
+.gmap_canvas{
+            overflow:scroll;
+            background:none!important;
+            height:251px;
+            width:1500px;
+            }
+
+.logo{
+	padding-top: 2.5%;
+}
+
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #182c39;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(loading.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Merriweather");
+body {
+  font-family: "Inconsolata", monospace;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.project {
+  position: relative;
+  background: #F2DAD7;
+  overflow: scroll;
+}
+.project img {
+  position: absolute;
+  opacity: 0.9;
+}
+.project p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 3;
+}
+.project .grid__title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  bottom: 0;
+  font-weight: 100;
+  font-size: 0.8em;
+  z-index: 3;
+  text-transform: uppercase;
+  color: #474545;
+  letter-spacing: 2px;
+}
+
+.project:hover .grid__overlay {
+  transform: translateY(0%);
+}
+
+.grid__overlay {
+  background: rgba(229, 182, 177, 0.9);
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  transition: all 0.3s ease-in-out;
+}
+.grid__overlay button {
+  background: none;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.grid__overlay button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+  color: #D1A39E;
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(71, 69, 69, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 3;
+}
+
+.overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.overlay__inner {
+  background: #ffffff;
+  width: 700px;
+  padding: 20px;
+  position: relative;
+  opacity: 1;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  background: none;
+  outline: 0;
+  color: #474545;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.close:hover {
+  color: #D1A39E;
+}
+
+.project__image {
+  margin-left: -50%;
+}

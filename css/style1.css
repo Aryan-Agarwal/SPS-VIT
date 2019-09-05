@@ -1,0 +1,17 @@
+*{	margin:0; padding:0; }
+body { padding: 20px; }
+.slider{
+	height:400px;
+	width:400px;
+	overflow:hidden;
+	border: 10px solid #ccc;
+}
+.slides {
+	list-style-type:none;
+	width:2000px;
+	margin:0; padding:0; 
+}
+.slide {
+	float:left;
+	margin:0; padding:0; 
+}
